@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/logout"><button type="button" class="btn btn-info">Logout</button></a>
+    
+    <h2>Welcome {{db.firstname}}</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>{{db.firstname}}</td>
+            <td>{{db.lastname}}</td>
+            <td>{{db.email}}</td>
+            <td>{{db.phone}}</td>
+            <td>{{db.address}}</td>
+            <td>{{db.website}}</td>
+        </tbody>
+    </table>
+</body>
+
+</html>
